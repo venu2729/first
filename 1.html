@@ -1,0 +1,98 @@
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+     <link rel="stylesheet" href="registration.css">
+</head>
+<style>
+    body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(251, 220, 220) ;
+}
+h2{
+    text-align: center;
+}
+form{
+    padding:10px;
+    height:550px;
+    border-radius:20px;
+    margin-left:400px ;
+    margin-right:400px ;
+    background-color:rgb(216, 52, 79);
+}
+label{
+    display:block;
+    margin:4px;
+    font-weight:bold;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+textarea{
+    padding:10px;
+    border:2px solid rgb(245, 245, 245);
+    border-radius:20px;
+    width:100%;
+    margin: bottom 5px;
+}
+select{
+    width:100%px;
+    padding:10px;
+    border:2px solid rgb(245, 245, 245);
+    border-radius:5px;
+    margin-bottom:20px;
+
+}
+input[type="submit"]{
+    color:rgb(255, 240, 253);
+    background-color: rgb(128, 0, 119);
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(255, 0, 34);
+} 
+.container{
+    width:400px;
+    margin:auto;
+    height:400px;
+}  
+</style>
+<body>
+
+
+    <h2>Registration Form</h2>
+    <form style="text-align: center;"
+       action="https://formspree.io/f/xjvqdedv"
+       method="POST"
+       enctype="multipart/form-data">
+        <div class="container">
+        <label for="name">Name</label>
+        <input type="text" name="name" required="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required="">
+        <label for="password">password</label>
+        <input type="password" name="password" .id="password" required="">
+        <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="DOB" required="">
+        <label for="phone number">phone number</label>
+        <input type="tel" name="phone number" id="phone number" required="">
+        <label for="gender">gender</label>
+        <select id="gender">
+            <option value="male" name="male">Male</option>
+            <option value="female" name="female">Female</option>
+            <option value="others" name="others">Other</option></select>
+            <label for="zipcode">zip code</label>
+            <input type="text" name="zipo code" id="zip code" required="">
+            <label for="about">About</label>
+            <textarea name="about"></textarea>
+            <div class="neha"></div>
+            <button class="button">Register</button>
+
+</form>
+</body>
+</html>
